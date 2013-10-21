@@ -1,0 +1,43 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+    
+    <LinearLayout 
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        
+	    <Button android:id="@+id/trainButton"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:text="@string/button_train_start"
+	        android:clickable="true"
+	        android:onClick="onRecordButtonClick"/>
+	    <Button android:id="@+id/registerButton"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:text="@string/button_save"
+	        android:clickable="true"
+	        android:onClick="onSaveButtonClick"/>
+	    <Button android:id="@+id/recognizeButton"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:text="@string/button_recognize_start"
+	        android:clickable="true"
+	        android:onClick="onRecognizeButtonClick"/>
+	    
+		<TextView android:id="@+id/logText"
+			 android:layout_width="wrap_content"
+			 android:layout_height="wrap_content"
+			 android:text="@string/log_label" />
+	        
+    </LinearLayout>
+	
+            
+</RelativeLayout>
